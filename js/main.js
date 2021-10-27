@@ -95,7 +95,7 @@ document.addEventListener('keyup', handleKeyUp)
 //FUNÇÕES ADICIONAIS
 function level(){
     record();
-    if(show > num*50){
+    if(show > num*100){
         num++;
         time -=5;
         interCatus = interCatus.map(function(item){
