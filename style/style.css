@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fafafa;
+}
+
+.dino{
+    background-image: url(../img/dino.png);
+    bottom: 0%;
+    height: 60px;
+    left: 25px;
+    position: absolute;
+    width: 60px;
+}
+
+.cactus{
+    background-image: url(../img/cactus.png);
+    bottom: 0;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+}
+
+.background{
+    animation: slideright 600s infinite linear;
+    background-image: url(../img/background.png);
+    background-repeat: repeat-x;
+    bottom: 0;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+}
+
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.pontos{
+    font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+    right: 80px;
+    position: absolute;
+    top: 50px;
+}
+
+.game-over{
+    color: #666666;
+    font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+.btn-delete{
+    background-color: rgba(252, 19, 2, 0.5);
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+    left: 40%;
+    position: absolute;
+    padding: 4px 20px;
+    top: 50%;
+}
